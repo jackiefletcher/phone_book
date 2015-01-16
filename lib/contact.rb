@@ -1,11 +1,11 @@
 class Contact
   @@contacts = []
 
-  attr_reader(:name, :number)
+  attr_reader(:name, :numbers)
 
-  define_method(:initialize) do |name, number|
+  define_method(:initialize) do |name| #removed number?
     @name = name
-    @number = number
+    @numbers = []
     @id = @@contacts.length().+(1)
   end
 
@@ -33,5 +33,9 @@ class Contact
       end
     end
     found_contact
+  end
+
+  define_method(:add_numbers) do |number|
+    @numbers.push(number)
   end
 end
