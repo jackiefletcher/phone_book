@@ -9,7 +9,7 @@ describe(Contact) do
 
   describe('#name') do
     it("returns the name of the contact") do
-      test_contact = Contact.new("Kiel Fletcher") #, "720.470.5627") this doesn't make sense to me why these exercises are backwards
+      test_contact = Contact.new("Kiel Fletcher") #, "720.470.5627") ?
       test_contact.save()
       expect(test_contact.name()).to(eq("Kiel Fletcher"))
     end

@@ -1,5 +1,6 @@
 <h2><%= @contact.name() %></h2>
 <h3>Current numbers:</h3>
+
 <ul><% @contact.numbers().each() do |number| %>
   <li>Mobile: <%= number.mobile_number() %></li>
   <li>Work: <%= number.work_number() %></li>
@@ -26,6 +27,7 @@
   </div>
   <button type="submit" class="btn">Add numbers</button>
 </form>
+
 <p>
 <a href="/">Return to Main Page</a>
 </p>

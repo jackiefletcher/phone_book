@@ -56,6 +56,4 @@ describe(Phone) do
       expect(Phone.all()).to(eq([]))
     end
   end
-
-
 end
